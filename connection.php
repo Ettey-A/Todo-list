@@ -1,9 +1,9 @@
 <?php
 //connection to database
-$dbhostname = 'localhost';
-$dbdatabase = 'db_todo';
-$dbuser = 'root';
-$dbpass = '';
+$dbhostname = 'sql8.freesqldatabase.com';
+$dbdatabase = 'sql8768410';
+$dbuser = 'sql8768410';
+$dbpass = 'pkNnx1eJar';
 
 $conn = new mysqli($dbhostname, $dbuser, $dbpass, $dbdatabase);
 if($conn ->connect_error) {

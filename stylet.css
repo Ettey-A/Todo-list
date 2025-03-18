@@ -11,13 +11,12 @@ body {
 .login-container {
     display: flex;
     text-align: left;
-    width: 900px;
-    height: 600px;
+    width: 500px;  /* Reduced width */
+    height: 400px; /* Reduced height */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     overflow: hidden;
 }
-
 
 .image-section {
     flex: 1;
@@ -39,41 +38,40 @@ body {
     100% { opacity: 1; }
 }
 
-
 .form-section {
     flex: 1;
-    padding: 40px;
+    padding: 20px; /* Reduced padding */
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
 }
 
 .form-section h1 {
-    margin-bottom: 20px;
-    font-size: 28px;
+    margin-bottom: 15px;  /* Reduced margin */
+    font-size: 22px;      /* Smaller font size */
     color: #333;
 }
 
 form {
-    width: 100%;
-    max-width: 300px;
+    width: 99%;
+    max-width: 250px;  /* Reduced max width */
     text-align: left;
 }
 
 label {
     display: block;
     margin-bottom: 5px;
-    font-size: 14px;
+    font-size: 12px;  /* Smaller label font size */
     color: #555;
 }
 
 input {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 8px;  /* Reduced padding */
+    margin-bottom: 15px;  /* Reduced margin */
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 14px;  /* Smaller font size */
 }
 
 input:focus {
@@ -85,35 +83,33 @@ input:focus {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Reduced margin */
 }
 
 .remember-me input {
-    margin-right: 10px;
+    margin-right: 8px;  /* Smaller margin */
     cursor: pointer;
-    width: 20px;
-    height: 20px;
+    width: 18px;  /* Smaller checkbox */
+    height: 18px; /* Smaller checkbox */
 }
 
 .remember-me label {
-    font-size: 14px;
+    font-size: 12px;  /* Smaller font size */
     color: #555;
     line-height: 1.2;
     margin: 0;
     cursor: pointer;
 }
 
-
-
 button {
     width: 100%;
-    padding: 10px;
+    padding: 8px;  /* Reduced padding */
     background-color: #6a11cb;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;  /* Smaller font size */
 }
 
 button:hover {
@@ -140,11 +136,66 @@ button:hover {
     margin-top: -15px;
 }
 
-/* Media query for mobile devices */
-@media (max-width: 768px){
-.login-container{
-    flex-direction: column;
+/* Media Queries for iPhone 14 Pro Max Landscape (926px width) */
+@media (max-width: 926px) and (orientation: landscape) {
+    .login-container {
+        width: 90%;  /* Make the form container more responsive */
+        height: 250px; /* Reduced height further */
+        flex-direction: column;
+        padding: 15px;  /* Reduced padding */
+    }
+
+    .image-section {
+        height: 200px;  /* Smaller image section */
+        flex: 0;
+    }
+
+    .form-section {
+        padding: 15px;  /* Reduced padding */
         width: 100%;
-        height: auto;
-}
+        max-width: 100%;
+    }
+
+    .form-section h1 {
+        font-size: 18px;  /* Smaller header font size */
+        margin-bottom: 10px;  /* Reduced margin */
+    }
+
+    form {
+        max-width: 230px;  /* Reduced form width */
+    }
+
+    label {
+        font-size: 10px;  /* Further reduced font size */
+        margin-bottom: 3px; /* Smaller margin */
+    }
+
+    input {
+        font-size: 12px;  /* Smaller font size */
+        padding: 6px;  /* Smaller padding */
+        margin-bottom: 10px;  /* Smaller margin */
+    }
+
+    input:focus {
+        border-color: #6a11cb;
+    }
+
+    .remember-me input {
+        width: 14px;  /* Smaller checkbox size */
+        height: 14px; /* Smaller checkbox size */
+    }
+
+    .remember-me label {
+        font-size: 10px;  /* Smaller font size */
+        margin-left: 5px;  /* Adjusted margin */
+    }
+
+    button {
+        font-size: 12px;  /* Smaller button font size */
+        padding: 6px;  /* Smaller button padding */
+    }
+
+    .additional-links a {
+        font-size: 10px;  /* Smaller link font size */
+    }
 }
