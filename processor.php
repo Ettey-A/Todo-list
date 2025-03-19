@@ -83,7 +83,7 @@ if (isset($_POST['action'])) {
         $stmt->store_result();
 
         if ($stmt->num_rows > 0) {
-            echo "Error: Email already registered!";
+            echo " Email already registered!";
             exit();
         }
 
